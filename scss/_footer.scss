@@ -1,0 +1,308 @@
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #1e4c88 0% 0% no-repeat padding-box;
+  margin-top: 100px;
+  padding-top: 30px;
+position: relative;
+  @media all and (max-width:618px){
+    margin-top: 0px;
+  }
+
+  .struct {
+    display: inline-flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .logo_footer {
+      display: inline-block;
+      width: 50px;
+      position: relative;
+      img {
+        display: inline-block;
+        width: 100%;
+      }
+
+      @media all and (max-width:813px){
+        &:after{
+          position: absolute;
+          content: attr(logo);
+          top: 50%;
+          transform: translateY(-50%) translateX(10px);
+          color: white;
+          font-size: 20px;
+          font-weight: 600;
+          width: 230px;
+        }
+      }
+
+    }
+
+    .row_item {
+      display: block;
+      @media all and (max-width:1127px){
+          width: 40%;
+          margin-bottom: 50px;
+      }
+      @media all and (max-width:813px){
+        width: 100%;
+        margin-bottom: 0px;
+        margin-top: 50px;
+      }
+    }
+    .title_block {
+      display: block;
+      color: white;
+      font-size: 25px;
+      font-weight: 500;
+      @media all and (max-width:1267px){
+        font-size: 18px;
+      }
+
+      .text1 {
+        display: inline-block;
+      }
+
+      .place {
+        display: inline-flex;
+        height: 20px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 6px;
+        margin-left: 3px;
+        border-left: 4px solid white;
+        font-weight: bold;
+        @media all and (max-width:1267px){
+            border-left: 2px solid white;
+        }
+      }
+      .line {
+        display: block;
+        height: 5px;
+        width: 25px;
+        position: relative;
+        background: white;
+        &::after {
+          content: " ";
+          width: 10px;
+          height: 4.5px;
+          background: white;
+          opacity: 0.4;
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          right: 0px;
+          transform: translateX(100%) translateY(-50%);
+        }
+      }
+    }
+
+    .list_link {
+      display: block;
+      margin-top: 20px;
+      justify-content: center;
+      align-items: center;
+
+      .puce {
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: white;
+        border: 3px solid #0a8400;
+        box-sizing: border-box;
+        margin-right: 8px;
+      }
+
+      .item_link {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-left: 15px;
+        margin-bottom: 7px;
+      }
+
+      .link_val {
+        display: inline-block;
+        color: white;
+        font-size: 13px;
+      }
+    }
+
+    .img_place {
+      display: block;
+      margin-top: 20px;
+      width: 310px;
+      height: 200px;
+      border-radius: 8px;
+      overflow: hidden;
+      @media all and (max-width:1267px){
+        width: 250px;
+       height: 160px;
+      }
+
+      @media all and (max-width:1127px){
+        width: 100%;
+      }
+      
+    @media all and (max-width:813px){
+        height: 300px;
+      }
+      @media all and (max-width:520px){
+        height: 180px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .info_footer {
+      display: block;
+
+      margin-top: 20px;
+      .item {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 10px;
+
+        .ico {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 18px;
+          height: 18px;
+          border: 1px solid white;
+          border-radius: 50%;
+          font-size: 10px;
+          color: white;
+          @media all and (max-width:1267px){
+            width: 15px;
+            height: 15px;
+            font-size: 8px;
+          }
+        }
+
+        .ico2 {
+          border: none;
+          font-size: 19px;
+          @media all and (max-width:1267px){
+           
+            font-size: 14px;
+          }
+        }
+
+        .text {
+          display: inline-flex;
+          justify-content: center;
+          align-items: flex-start;
+          margin-left: 10px;
+          padding-left: 10px;
+          height: 18px;
+          color: white;
+          font-size: 13px;
+          border-left: 1px solid white;
+          @media all and (max-width:1267px){
+           font-size: 11px;
+          }
+        }
+      }
+    }
+
+    .news_letter
+    {
+        display: block;
+        margin-top:40px;
+        .form_newsletter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            width: 290px;
+            height: 60px;
+            overflow: hidden;
+            margin-top: 30px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border-radius: 4px;
+
+            @media all and (max-width:1267px){
+                height: 55px;
+            }
+
+            input{
+                color: #626262;
+                font-size: 13px;
+                padding-left: 20px;
+                height: 100%;
+                width: 70%;
+                border: none;
+            }
+
+            button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background: #0a8400;
+                font-size: 18px;
+                height: 100%;
+                border: none;
+                width: 30%;
+
+            }
+        }
+    }
+
+  }
+
+  .signature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 0.2px solid rgba(255, 255, 255, 0.349);
+    margin-top: 40px;
+
+    .struct_signature {
+      display: block;
+      width: 90%;
+      font-size: 13px;
+      color: white;
+      text-align: center;
+      @media all and (max-width:1267px){
+       font-size: 12px;
+      }
+      .text {
+        display: inline-block;
+      }
+
+      .socials {
+        display: inline-block;
+        margin-left: 100px;
+        @media all and (max-width:1063px){
+           margin-top: 20px;
+           margin-left: 0px;
+           width: 100%;
+        }
+        .social {
+          display: inline-block;
+          color: white;
+          font-size: 20px;
+          margin-right: 12px;
+          cursor: pointer;
+          @media all and (max-width:1267px){
+            font-size: 14px;
+           }
+        }
+      }
+    }
+  }
+}
